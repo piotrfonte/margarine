@@ -2,18 +2,13 @@
  * Set Cursor
  * ============================================ */
 
-@mixin set-cursor($normal: default, $hover: default, $active: default) {
-  cursor: -webkit-$normal;
-  cursor: -moz-$normal;
-  cursor: $normal;
-  &:hover {
-    cursor: -webkit-$hover;
-    cursor: -moz-$hover;
-    cursor: $hover;
-  }
+@mixin set-cursor($normal: default, $active: default) {
+  cursor: -webkit-#{$normal};
+  cursor: -moz-#{$normal};
+  cursor: #{$normal};
   &:active {
-    cursor: -webkit-$active;
-    cursor: -moz-$active;
-    cursor: $active;
+    cursor: -webkit-#{$active};
+    cursor: -moz-#{$active};
+    cursor: #{$active};
   }
 }
