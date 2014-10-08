@@ -103,6 +103,12 @@ $radius-l           : 9px;
 $radius-m           : 6px;
 $radius-s           : 3px;
 
+// Time definitions
+// ----------------------------------------------
+$time-l             : .6s;
+$time-m             : .4s;
+$time-s             : .2s;
+
 // Default Definitions
 // ----------------------------------------------
 $background         : $mono-Wt;
@@ -118,7 +124,7 @@ $weight             : $font-regular;
 $line               : $line-m;
 
 $delay              : 0s;
-$duration           : .5s;
+$time               : $time-m;
 
 $space              : $space-s;
 $radius             : $radius-s;
