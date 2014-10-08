@@ -36,7 +36,7 @@
 }
 @mixin set-type-small {
   font-size  : $font-s;
-  line-height: $default-line;
+  line-height: $line-m;
   @include breakpoint(m) {
     font-size  : $font-m;
     line-height: $line-m;
