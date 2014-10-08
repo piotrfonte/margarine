@@ -1,0 +1,10 @@
+/**
+ * Indent
+ * ============================================ */
+
+@mixin indent {
+  text-indent: $space-l;
+  @include breakpoint(m) {
+    text-indent: $space-xl;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "pf-margarine",
+  "version": "1.0.0",
+  "authors": [
+    "Piotr Fedorczyk - piotrf.pl <piotr@piotrf.pl>"
+  ],
+  "description": "A collection of SASS mixins",
+  "keywords": [
+    "sass",
+    "mixin",
+    "library"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

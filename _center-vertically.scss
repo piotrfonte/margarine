@@ -1,0 +1,11 @@
+/**
+ * Center vertically
+ * ============================================ */
+
+@mixin center-vertically {
+  position: relative;
+  top: 50%;
+  -webkit-transform: transform(translateY(-50%));
+  -ms-transform: transform(translateY(-50%));
+  transform: transform(translateY(-50%));
+}

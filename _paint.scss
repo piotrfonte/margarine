@@ -1,0 +1,29 @@
+/**
+ * Paint
+ * ============================================ */
+
+@mixin paint-default {
+  background: $mono-Wt;
+  border-color: $mono-HL;
+  color: $mono-HD;
+  * {
+    border-color: $mono-HL;
+    color: $mono-HD;
+  }
+  i {
+    color: $mono-HD;
+  }
+}
+
+@mixin paint-invert {
+  background: $mono-LD;
+  border-color: $mono-HL;
+  color: $mono-Wt;
+  * {
+    border-color: $mono-HL;
+    color: $mono-Wt;
+  }
+  i {
+    color: $mono-Wt;
+  }
+}

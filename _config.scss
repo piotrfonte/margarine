@@ -1,0 +1,124 @@
+/*
+  ===============================================
+  # CONFIG
+  ===============================================
+*/
+
+// Colour Palette
+// ----------------------------------------------
+
+$mono-Blk           : #000;
+$mono-LD            : rgba(0,0,0,0.875);
+$mono-D             : rgba(0,0,0,0.75);
+$mono-HD            : rgba(0,0,0,0.625);
+$mono-M             : rgba(0,0,0,0.50);
+$mono-LLt           : rgba(0,0,0,0.375);
+$mono-Lt            : rgba(0,0,0,0.25);
+$mono-HL            : rgba(0,0,0,0.125);
+$mono-Wt            : #fff;
+
+// Rainbow
+// $red-Blk            : #...;
+$red-LD             : #800408;
+// $red-D              : #...;
+// $red-HD             : #...;
+// $red-M              : #...;
+// $red-LLt            : #...;
+// $red-Lt             : #...;
+// $red-HL             : #...;
+// $red-Wt             : #...;
+
+// $blue-Blk           : #...;
+$blue-LD            : #004770;
+// $blue-D             : #...;
+// $blue-HD            : #...;
+// $blue-M             : #...;
+// $blue-LLt           : #...;
+// $blue-Lt            : #...;
+// $blue-HL            : #...;
+// $blue-Wt            : #...;
+
+// Shadows and glows
+// ----------------------------------------------
+
+$shadow-heavy       : rgba(0,0,0,0.9);
+$shadow-strong      : rgba(0,0,0,0.7);
+$shadow-medium      : rgba(0,0,0,0.5);
+$shadow-weak        : rgba(0,0,0,0.25);
+$shadow-light       : rgba(0,0,0,0.1);
+
+$flare-heavy        : rgba(255,255,255,0.85);
+$flare-strong       : rgba(255,255,255,0.71);
+$flare-medium       : rgba(255,255,255,0.57);
+$flare-weak         : rgba(255,255,255,0.29);
+$flare-light        : rgba(255,255,255,0.15);
+
+// Typography
+// ----------------------------------------------
+
+// Font Families
+$primary-font       : sans-serif;
+$secondary-font     : serif;
+$icon-font          : 'iconfont';
+
+// Font Sizes
+$font-xl            : 24px;
+$font-l             : 20px;
+$font-m             : 16px;
+$font-s             : 14px;
+$font-xs            : 12px;
+
+// Font Weights
+$font-light         : 300;
+$font-regular       : 400;
+$font-medium        : 500;
+$font-bold          : 700;
+
+// Line Heights
+$line-m             : 1.50em;
+$line-s             : 1.25em;
+
+// Spaces
+// ----------------------------------------------
+$spaces: (
+  'n'   0,
+  'x'   5px,
+  's'   10px,
+  'm'   15px,
+  'l'   20px,
+  'h'   40px
+)!default;
+
+$space-n            : 0;
+$space-x            : 5px;
+$space-s            : 10px;
+$space-m            : 15px;
+$space-l            : 20px;
+$space-h            : 40px;
+
+// Border Radii
+// ----------------------------------------------
+$radius-absolute    : 1000px;
+$radius-l           : 9px;
+$radius-m           : 6px;
+$radius-s           : 3px;
+
+// Default Definitions
+// ----------------------------------------------
+$background         : $mono-Wt;
+$color              : $mono-D;
+
+$flare              : $flare-medium;
+$shadow             : $shadow-medium;
+$opacity            : .5;
+
+$font               : $primary-font;
+$size               : $font-s;
+$weight             : $font-regular;
+$line               : $line-m;
+
+$delay              : 0s;
+$duration           : .5s;
+
+$space              : $space-s;
+$radius             : $radius-s;

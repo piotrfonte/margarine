@@ -1,0 +1,10 @@
+/**
+ * Reset First
+ * ============================================ */
+
+@mixin reset-first {
+  &:first-child {
+    border-top: none;
+    margin-top: 0;
+  }
+}
