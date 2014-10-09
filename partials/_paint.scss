@@ -27,3 +27,16 @@
     color: $mono-Wt;
   }
 }
+
+@mixin paint-mid {
+  background: $mono-Lt;
+  border-color: $mono-HL;
+  color: $mono-LD;
+  * {
+    border-color: $mono-HL;
+    color: $mono-LD;
+  }
+  i {
+    color: $mono-LD;
+  }
+}
