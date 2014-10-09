@@ -1,0 +1,16 @@
+/**
+ * Reset
+ * ============================================ */
+
+@mixin reset($child: "first", $property: "margin") {
+  @if $child == "first" {
+    &:first-child {
+      #{$property}: 0;
+    }
+  }
+  @if $child == "last" {
+    &:last-child {
+      #{$property}: 0;
+    }
+  }
+}
