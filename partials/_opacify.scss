@@ -2,8 +2,7 @@
  * Opacify
  * ============================================ */
 
-@mixin opacify($opacity: 0.75) {
-  @include transition(opacity $duration linear $delay);
+@mixin opacify($opacity: $opacity) {
   opacity: $opacity;
   &:hover,
   &:active,
