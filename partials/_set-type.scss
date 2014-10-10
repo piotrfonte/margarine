@@ -3,11 +3,11 @@
  * ============================================ */
 
 @mixin set-type-huge {
-  font-size  : $font-xl * 1.5;
-  line-height: $line-xs;
+  font-size  : $font-xxl * 1.25;
+  line-height: $line-s;
   @include breakpoint(m) {
-    font-size  : $font-h * 1.3;
-    line-height: $line-xxs;
+    font-size  : $font-xxl * 1.5;
+    line-height: $line-s;
   }
 }
 @mixin set-type-xlarge {
@@ -47,6 +47,14 @@
   line-height: $line-s;
   @include breakpoint(m) {
     font-size  : $font-s;
+    line-height: $line-s;
+  }
+}
+@mixin set-type-tiny {
+  font-size  : $font-xxs;
+  line-height: $line-s;
+  @include breakpoint(m) {
+    font-size  : $font-xs;
     line-height: $line-s;
   }
 }
