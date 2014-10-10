@@ -6,7 +6,7 @@
   font-size  : $font-xxl * 1.25;
   line-height: $line-s;
   @include breakpoint(m) {
-    font-size  : $font-xxl * 1.5;
+    font-size  : $font-xxl * 2;
     line-height: $line-s;
   }
 }
