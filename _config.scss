@@ -54,13 +54,13 @@ $secondary-font     : serif;
 $icon-font          : 'iconfont';
 
 // Font Sizes
-$font-xxl           : 30px;
-$font-xl            : 24px;
+$font-xxl           : 26px;
+$font-xl            : 22px;
 $font-l             : 20px;
-$font-m             : 16px;
-$font-s             : 14px;
-$font-xs            : 12px;
-$font-xxs           : 11px;
+$font-m             : 18px;
+$font-s             : 16px;
+$font-xs            : 14px;
+$font-xxs           : 12px;
 
 // Font Weights
 $font-light         : 300;
@@ -69,10 +69,13 @@ $font-medium        : 500;
 $font-bold          : 700;
 
 // Line Heights
+$line-l             : 1.65em;
 $line-m             : 1.50em;
 $line-s             : 1.25em;
 
-$spacing            : 0.2em;
+$spacing-l          : 0.3em;
+$spacing-m          : 0.2em;
+$spacing-s          : 0.1em;
 
 // Spaces
 // ----------------------------------------------
