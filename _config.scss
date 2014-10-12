@@ -8,35 +8,27 @@
 // ----------------------------------------------
 
 $mono-Blk           : #000;
-$mono-LD            : rgba(0,0,0,0.875);
-$mono-D             : rgba(0,0,0,0.75);
-$mono-HD            : rgba(0,0,0,0.625);
-$mono-M             : rgba(0,0,0,0.50);
-$mono-LLt           : rgba(0,0,0,0.375);
-$mono-Lt            : rgba(0,0,0,0.25);
-$mono-HL            : rgba(0,0,0,0.125);
+$mono-LD            : #1F1F1F;
+$mono-D             : #404040;
+$mono-HD            : #616161;
+$mono-M             : #7F7F7F;
+$mono-LLt           : #9E9E9E;
+$mono-Lt            : #BFBFBF;
+$mono-HL            : #E0E0E0;
 $mono-Wt            : #fff;
 
 // Rainbow
-// $red-Blk            : #...;
 $red-LD             : #800408;
-// $red-D              : #...;
-// $red-HD             : #...;
-// $red-M              : #...;
-// $red-LLt            : #...;
-// $red-Lt             : #...;
-// $red-HL             : #...;
-// $red-Wt             : #...;
+$red-HD             : #FF343B;
+$red-M              : #FF6166;
+$red-LLt            : #FF8D91;
+$red-HL             : #FFB9BB;
 
-// $blue-Blk           : #...;
 $blue-LD            : #004770;
-// $blue-D             : #...;
-// $blue-HD            : #...;
-// $blue-M             : #...;
-// $blue-LLt           : #...;
-// $blue-Lt            : #...;
-// $blue-HL            : #...;
-// $blue-Wt            : #...;
+$blue-HD            : #00578A;
+$blue-M             : #4B88AC;
+$blue-LLt           : #B2CCDB;
+$blue-HL            : #E5EDF3;
 
 // Shadows and glows
 // ----------------------------------------------
@@ -80,6 +72,8 @@ $font-bold          : 700;
 $line-m             : 1.50em;
 $line-s             : 1.25em;
 
+$spacing            : 0.2em;
+
 // Spaces
 // ----------------------------------------------
 $spaces: (
@@ -110,23 +104,3 @@ $radius-s           : 3px;
 $time-l             : .6s;
 $time-m             : .4s;
 $time-s             : .2s;
-
-// Default Definitions
-// ----------------------------------------------
-$background         : $mono-Wt;
-$color              : $mono-D;
-
-$flare              : $flare-medium;
-$shadow             : $shadow-medium;
-$opacity            : .5;
-
-$font               : $primary-font;
-$size               : $font-s;
-$weight             : $font-regular;
-$line               : $line-m;
-
-$delay              : 0s;
-$time               : $time-m;
-
-$space              : $space-s;
-$radius             : $radius-s;
