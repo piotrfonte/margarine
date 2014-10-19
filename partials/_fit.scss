@@ -12,20 +12,23 @@
     list-style: none;
     width: 100% / $small;
   }
-  > *:nth-of-type(#{$small}n+1)     { clear: both; }
+  > *:nth-of-type(#{$small}n+1)     { clear: left; }
   > *:nth-of-type(#{$small}n)       { clear: none; }
   @include breakpoint(m) {
     > * {
       width: 100% / $medium;
     }
-    > *:nth-of-type(#{$medium}n+1)  { clear: both; }
+    > *:nth-of-type(#{$small}n+1)   { clear: none; }
+    > *:nth-of-type(#{$medium}n+1)  { clear: left; }
     > *:nth-of-type(#{$medium}n)    { clear: none; }
   }
   @include breakpoint(l) {
     > * {
+      clear: none;
       width: 100% / $large;
     }
-    > *:nth-of-type(#{$large}n+1)   { clear: both; }
+    > *:nth-of-type(#{$medium}n+1)  { clear: none; }
+    > *:nth-of-type(#{$large}n+1)   { clear: left; }
     > *:nth-of-type(#{$large}n)     { clear: none; }
   }
 }
