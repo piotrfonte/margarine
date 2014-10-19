@@ -2,80 +2,30 @@
  * Fit
  * ============================================ */
 
-@mixin fit--three($force: false) {
-  @include reset-last;
+@mixin fit($small: 1, $medium: 2, $large: 3) {
   display: block;
   overflow: hidden;
   > * {
-    margin: 0 ($default-space * -1) $default-space;
+    @include box-sizing(border-box);
+    height: auto;
+    float: left;
+    list-style: none;
+    width: 100% / $small;
   }
-  @if $force == "force" {
-    @include breakpoint(s) {
-      > * {
-        @include box-sizing(border-box);
-        height: auto;
-        float: left;
-        list-style: none;
-        margin: 0 0 $default-space 0;
-        padding: 0 ($default-space / 2);
-        width: 33.3333%;
-      }
-      > *:nth-of-type(3n+1)  { clear: both; }
-      > *:nth-of-type(1n)    { clear: none; }
+  > *:nth-of-type(#{$small}n+1)     { clear: both; }
+  > *:nth-of-type(#{$small}n)       { clear: none; }
+  @include breakpoint(m) {
+    > * {
+      width: 100% / $medium;
     }
+    > *:nth-of-type(#{$medium}n+1)  { clear: both; }
+    > *:nth-of-type(#{$medium}n)    { clear: none; }
   }
-  @else {
-    @include breakpoint(m) {
-      > * {
-        @include box-sizing(border-box);
-        height: auto;
-        float: left;
-        list-style: none;
-        margin: 0 0 $default-space 0;
-        padding: 0 ($default-space / 2);
-        width: 33.3333%;
-      }
-      > *:nth-of-type(3n+1)  { clear: both; }
-      > *:nth-of-type(1n)    { clear: none; }
+  @include breakpoint(l) {
+    > * {
+      width: 100% / $large;
     }
-  }
-}
-
-@mixin fit--four($force: false) {
-  @include reset-last;
-  display: block;
-  overflow: hidden;
-  > * {
-    margin: 0 ($default-space * -1) $default-space;
-  }
-  @if $force == "force" {
-    @include breakpoint(s) {
-      > * {
-        @include box-sizing(border-box);
-        height: auto;
-        float: left;
-        list-style: none;
-        margin: 0 0 $default-space 0;
-        padding: 0 ($default-space / 2);
-        width: 25%;
-      }
-      > *:nth-of-type(3n+1)  { clear: both; }
-      > *:nth-of-type(1n)    { clear: none; }
-    }
-  }
-  @else {
-    @include breakpoint(m) {
-      > * {
-        @include box-sizing(border-box);
-        height: auto;
-        float: left;
-        list-style: none;
-        margin: 0 0 $default-space 0;
-        padding: 0 ($default-space / 2);
-        width: 25%;
-      }
-      > *:nth-of-type(3n+1)  { clear: both; }
-      > *:nth-of-type(1n)    { clear: none; }
-    }
+    > *:nth-of-type(#{$large}n+1)   { clear: both; }
+    > *:nth-of-type(#{$large}n)     { clear: none; }
   }
 }
