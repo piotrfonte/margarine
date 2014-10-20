@@ -28,7 +28,7 @@
 }
 @mixin set-type-medium {
   font-size  : $font-m;
-  line-height: $line-s;
+  line-height: $line-m;
   @include breakpoint(m) {
     font-size  : $font-l;
     line-height: $line-m;
