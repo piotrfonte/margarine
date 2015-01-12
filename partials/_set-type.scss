@@ -44,10 +44,10 @@
 }
 @mixin set-type-xsmall {
   font-size  : $font-xs;
-  line-height: $line-s;
+  line-height: $line-m;
   @include breakpoint(m) {
     font-size  : $font-s;
-    line-height: $line-s;
+    line-height: $line-m;
   }
 }
 @mixin set-type-tiny {
